@@ -10667,3 +10667,7 @@ body main #wrapper .major {
   right: 40px;
 }
 
+body .py-4 form .ckeditor.descricao .ck-editor__editable {
+  height: 250px;
+}
+

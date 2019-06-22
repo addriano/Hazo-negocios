@@ -28,6 +28,6 @@ class HomeController extends Controller
 
     public function app()
     {
-        return view('app');
+        return view('app/painel');
     }
 }

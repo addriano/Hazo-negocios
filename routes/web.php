@@ -19,4 +19,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/app', 'HomeController@app')->name('app');
+Route::get('/app', 'HomeController@app');
+
+
+Route::prefix('app')->group(function () {
+    Route::prefix('marcas')->group(function() {
+        Route::get('/', 'app\MarcasController@index');
+        Route::get('/novo', 'app\MarcasController@new');
+        Route::post('/', 'app\MarcasController@create');
+    }); 
+});

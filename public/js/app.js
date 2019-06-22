@@ -49289,6 +49289,11 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 var app = new Vue({
   el: '#app'
 });
+ClassicEditor.create(document.querySelector('.textarea')).then(function (editor) {
+  console.log(editor);
+})["catch"](function (error) {
+  console.error(error);
+});
 
 /***/ }),
 

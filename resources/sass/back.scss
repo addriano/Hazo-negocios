@@ -1,0 +1,14 @@
+body {
+    .py-4 {
+        form {
+            .ckeditor{
+
+                &.descricao {
+                    .ck-editor__editable {
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
